@@ -70,6 +70,12 @@ export interface OkxBarPoint {
   netPnl: number;
 }
 
+export interface OkxScatterPoint {
+  x: number;
+  y: number;
+  asset: string;
+}
+
 export interface OkxCapitalSeriesPoint {
   label: string;
   timestamp: number;
