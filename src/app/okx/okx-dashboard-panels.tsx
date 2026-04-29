@@ -453,8 +453,8 @@ export function LabelsPanel({ labels }: { labels: OkxLabel[] }) {
         </p>
       </div>
       <div className="grid gap-3 md:grid-cols-2">
-        {labels.map((label) => (
-          <InsightChip key={`${label.key}-${label.label}`} label={label} />
+        {labels.map((label, i) => (
+          <InsightChip key={`${label.key}-${label.label}-${i}`} label={label} />
         ))}
       </div>
     </section>
